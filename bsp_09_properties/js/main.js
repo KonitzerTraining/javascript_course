@@ -1,7 +1,7 @@
 (function () {
     "use strict";
 
-
+    // ES 5
     var o = Object.defineProperties({}, {
         color: {
             value: "green",
