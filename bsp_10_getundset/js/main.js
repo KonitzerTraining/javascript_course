@@ -43,13 +43,16 @@
                 enumerable: true
             }
         });
-        return obj;
+        return Object.seal(obj);
     };
 
     var obj = objFactory();
     console.log(obj.hexColor);
     obj.hexColor = [0xA2, 0xFF, 0x01];
 
+   // obj.color = "green";
     console.log(obj);
+
+//    obj.destroy;
 
 }());
