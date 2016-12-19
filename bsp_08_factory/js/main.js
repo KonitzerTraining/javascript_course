@@ -26,6 +26,7 @@
     var c2 = customerFactory("Hans Müller");
     console.log(c1.customerId());
     console.log(c2.customerId());
+    console.log(c2);
 
     var p = c1.projekte("p34");
     console.log(p);
