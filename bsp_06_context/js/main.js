@@ -1,6 +1,9 @@
 var color = "green";
-
+//var globaleVariable;
 (function () {
+    "use strict";  //  kein Zugriff auf Globale
+
+    //globaleVariable = "234";
 
     var context = {
         color: "blue"
