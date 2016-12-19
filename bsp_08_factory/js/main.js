@@ -1,6 +1,6 @@
 (function () {
     "use strict";
-
+    // Factory Pattern
     var customerFactory = function (vn) {
 
         // Privat
@@ -23,7 +23,9 @@
     };
 
     var c1 = customerFactory("Hans Müller");
-    console.log(c1);
+    var c2 = customerFactory("Hans Müller");
+    console.log(c1.customerId());
+    console.log(c2.customerId());
 
     var p = c1.projekte("p34");
     console.log(p);
