@@ -1,7 +1,7 @@
 // Closure
 
-var system = function (item) { // Closure
-    var basket = [];
+var system = function () { // Closure
+    var basket = [];  // private Variable
 
     return function (item) {
         basket.push(item);
