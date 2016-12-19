@@ -11,16 +11,45 @@
 
         var obj = Object.defineProperties({}, {
 
-            HEXcolor: {
-                get: function () {1
-                    return color; // #12A2d
-                }
+            hexColor: {
+                get: function () {
+                    var ausgabe = "#";
+                    var r = color.r.toString(16);
+                    var g = color.g.toString(16);
+                    var b = color.b.toString(16);
+
+                    if(r.length === 1) {
+                        r = "0" + r;
+                    }
+
+                    if(g.length === 1) {
+                        g = "0" + g;
+                    }
+                    if(b.length === 1) {
+                        b = "0" + b;
+                    }
+
+                    ausgabe += r;
+                    ausgabe += g;
+                    ausgabe += b;
+
+                    return ausgabe; // #12A2d7
+                },
+                set: function (p) {
+                    color.r = p[0];
+                    color.g = p[1];
+                    color.b = p[2];
+                },
+                enumerable: true
             }
         });
         return obj;
     };
 
     var obj = objFactory();
+    console.log(obj.hexColor);
+    obj.hexColor = [0xA2, 0xFF, 0x01];
 
-    console.log(obj.HEXcolor);
+    console.log(obj);
+
 }());
