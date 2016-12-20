@@ -17,6 +17,14 @@ window.onerror = function (msg) {
     try {
         app();
     } catch (e) {
+
+        switch (e.name) {
+            case "TypeError":
+                break;
+
+        }
+
+        console.dir(e.name);
         console.log(e instanceof TypeError); // true
         console.log(e.message);              // "Hello"
         console.log(e.name);                 // "TypeError"
