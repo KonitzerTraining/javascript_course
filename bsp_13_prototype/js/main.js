@@ -18,7 +18,6 @@
     f1();
 */
 
-
     var Person = function () {
 
     };
