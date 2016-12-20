@@ -10,6 +10,7 @@ window.BSI.collection = (function () {
     "use strict";
     var basket = [];
 
+    // ES5
     return Object.create({
         addItem: function (item) {
             basket.push(item);
