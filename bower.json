@@ -1,0 +1,22 @@
+{
+  "name": "muenchen_19122016_javascript",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Marcus Konitzer <mk@konitzer-training.de>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/KonitzerTraining/javascript_course",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "requirejs": "^2.3.2"
+  }
+}
