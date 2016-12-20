@@ -11,6 +11,18 @@
 
         var obj = Object.defineProperties({}, {
 
+            // Attribute
+            name : {
+                value: "Haus",
+                writable: true
+            },
+            // Method
+            makeLabel: {
+                value: function () {
+                    console.log("Ich bin ein(e) " + this.name);
+                }
+            },
+
             hexColor: {
                 get: function () {
                     var ausgabe = "#";
@@ -54,5 +66,10 @@
     console.log(obj);
 
 //    obj.destroy;
+    console.log(typeof obj);
+    console.log( obj instanceof Object);
 
+    obj.makeLabel();
+    obj.name = "Baum";
+    obj.makeLabel();
 }());
