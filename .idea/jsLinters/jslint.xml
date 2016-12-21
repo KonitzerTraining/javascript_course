@@ -4,6 +4,7 @@
     <option browser="true" />
     <option devel="true" />
     <option maxerr="50" />
+    <option node="true" />
     <option single="true" />
     <option this="true" />
     <option white="true" />
