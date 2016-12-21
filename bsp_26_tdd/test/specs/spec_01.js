@@ -8,11 +8,11 @@ describe xdescribe it xit expect
     describe("Baustein", function () {
 
 // Spec
-        xit("should work", function () {
+        it("should work", function () {
 
             // erwartung - matcher
-            expect(0).toBe(1);
-            expect(0).toEqual();
+            expect(1).toBe(1);
+           // expect(0).toEqual();
 
 
             // .not.toBe
