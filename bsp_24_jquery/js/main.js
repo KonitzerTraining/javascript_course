@@ -27,13 +27,21 @@ $(document).ready(function () {
     });
 
 // Animationen
-
-    $("#box2").on("mouseenter", function (e) {
-        $(this)
+    function aniThis (t) {
+        $(t)
             .hide(500)
             .show(200)
             .slideDown(100)
             .slideUp(300);
+    }
+
+
+    $("#box2").on("mouseenter", function (e) {
+        aniThis(this);
+    });
+
+    $("#box1").on("mouseenter", function (e) {
+        aniThis(this);
     });
 
     $("#box3").on("mouseenter", function (e) {
