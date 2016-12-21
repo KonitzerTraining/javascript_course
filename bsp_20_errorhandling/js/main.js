@@ -35,6 +35,6 @@ window.onerror = function (msg) {
 
 
         var image = new Image();
-        image.src = "http://localhost:3000/error?id=" + e.message;
+        image.src = "http://localhost:3000/?id=" + e.message;
     }
 }());
