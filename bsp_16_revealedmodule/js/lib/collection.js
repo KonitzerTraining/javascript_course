@@ -1,12 +1,12 @@
 /*global
- window
+ NAMESPACE window
  */
 
 // namespace pattern
-window.BSI = window.BSI || {};
+window.NAMESPACE = window.NAMESPACE || {};
 
 // module pattern
-window.BSI.collection = (function () {
+window.NAMESPACE.collection = (function () {
     "use strict";
     var basket = [];
     var addItem = function (item) {
@@ -23,6 +23,5 @@ window.BSI.collection = (function () {
         getAllItems:getAllItems,
         version: "2.3.4"
     };
-
 
 }());

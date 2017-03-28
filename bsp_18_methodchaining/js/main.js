@@ -1,8 +1,6 @@
 (function () {
     "use strict";
 
-    var obj = new Object();
-
     /**
      * Erstellt einen Kunden
      * @param fn
@@ -22,15 +20,14 @@
                 set: function (nId) {
                     customerId = nId;
                 }
-            },
-            sayHello: {
-                value: function () {
-                    console.log("Hallo");
-                    return this; // Method Chaining
-                }
             }
         });
         console.log(this);
+    };
+
+    Customer.prototype.sayHello = function () {
+        console.log("Hallo");
+        return this; // Method Chaining
     };
 
     var p1 = new Customer("hans", "3242344");

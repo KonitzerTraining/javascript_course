@@ -1,5 +1,5 @@
 /*global
- window
+ window, NAMESPACE
  */
 
 // namespace pattern

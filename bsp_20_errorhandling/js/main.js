@@ -10,6 +10,7 @@ window.onerror = function (msg) {
 
         if (a === undefined) {
             //throw "Fehlerhafter Datentyp";
+            //throw "asdf";
             throw new TypeError(38474);
         }
     }
@@ -20,15 +21,14 @@ window.onerror = function (msg) {
 
         switch (e.name) {
             case "TypeError":
+                console.log("ok");
                 break;
 
         }
 
-        console.dir(e.name);
-        console.log(e instanceof TypeError); // true
-        console.log(e.message);              // "Hello"
-        console.log(e.name);                 // "TypeError"
-        console.log(e.fileName);             // "someFile.js"
+        console.dir(e.name); //"TypeError"
+        console.log(e.message);  // "38474"
+        console.log(e.fileName);   // "someFile.js"
         console.log(e.lineNumber);           // 10
         console.log(e.columnNumber);         // 0
         console.log(e.stack);                // "@Scratchpad/2:2:9\n"

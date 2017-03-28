@@ -13,9 +13,9 @@ var Ware = (function () {
     return Ware;
 }());
 
+
 var Kleidung = (function () {
     "use strict";
-
 
 // Subtype
     var Kleidung = function (g, p) {
@@ -24,6 +24,7 @@ var Kleidung = (function () {
 // constructor stealing
         Ware.call(this, p);
     };
+
 
 // prototypal inheritance
     Kleidung.prototype = Object.create(Ware.prototype, {
