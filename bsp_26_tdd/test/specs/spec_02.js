@@ -1,5 +1,5 @@
 /*global
- describe xdescribe it xit expect BSI
+ describe xdescribe it xit expect NAMESPACE
 
  */
 (function () {
@@ -8,12 +8,13 @@
     describe("Warenkorb", function () {
         it("should exist", function () {
 
-            expect(BSI.basket).toBeDefined();
+            expect(NAMESPACE.basket).toBeDefined();
         });
+
         it("should add items", function () {
 
-            expect(BSI.basket.addItem).toBeDefined();
-            expect(BSI.basket.addItem).toThrowError("2034");
+            expect(NAMESPACE.basket.addItem).toBeDefined();
+            expect(NAMESPACE.basket.addItem).toThrowError("2034");
         });
     });
 }());

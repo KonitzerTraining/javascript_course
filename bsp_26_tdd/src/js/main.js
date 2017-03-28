@@ -1,14 +1,14 @@
 /*global
  window, BSI
  */
-window.BSI = window.BSI || {};
-window.BSI.basket = (function () {
+window.NAMESPACE = window.NAMESPACE || {};
+window.NAMESPACE.basket = (function () {
     "use strict";
 
     return {
         addItem: function (item) {
             if (typeof item !== "string") {
-                throw new Error("2034");
+               throw new Error("2034");
             }
         }
     };

@@ -12,6 +12,7 @@ describe xdescribe it xit expect
 
             // erwartung - matcher
             expect(1).toBe(1);
+            expect([1]).not.toBe([1]);
            // expect(0).toEqual();
 
 

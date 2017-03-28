@@ -1,5 +1,4 @@
 class Person {
-
     private vorname: string;
 
     constructor(vn) {
