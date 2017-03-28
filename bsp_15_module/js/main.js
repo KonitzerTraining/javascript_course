@@ -1,12 +1,15 @@
 /*global
-BSI
+ NAMESPACE
  */
 (function () {
     "use strict";
 
-    BSI.collection.addItem("Kunde 1");
-    var alle = BSI.collection.getAllItems();
+    NAMESPACE.collection.addItem("Kunde 1");
+
+
+    var alle = NAMESPACE.collection.getAllItems();
+    console.log(NAMESPACE);
     console.log(alle);
 
-    console.log(BSI.collection);
+    console.log(NAMESPACE.collection);
 }());

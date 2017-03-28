@@ -9,12 +9,18 @@ o.farbe = "blau";
 var o2 = {
     farbe : "yellow",
     2: "test",
-    liste: []
+    liste: [],
+    machWas: function () {
+
+    },
+    "asdf asdf asdf": "aha"
 }; // Object literal notation
+console.log(o2);
+
 o2.anzahl = 234;
 
-console.log(o2.anzahl);
-console.log(o2[2]);
+console.log(typeof o2.neu);
+console.log(o2["asdf asdf asdf"]);
 
 var l = new Array(3,4,5);
 var l2 = [3,5,5]; // array literal notation

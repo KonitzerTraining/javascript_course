@@ -1,13 +1,14 @@
 /*global
-window
+ NAMESPACE
  */
 
 // namespace pattern
-window.BSI = window.BSI || {};
+this.NAMESPACE = this.NAMESPACE || {};
 
 // module pattern
-window.BSI.Customer =(function () {
+NAMESPACE.Customer =(function () { // Closure
     "use strict";
+
     var count = 0;  // static privat
     // constructor pattern
     var Customer = function (fn) {
@@ -21,8 +22,11 @@ window.BSI.Customer =(function () {
         console.log(this.fullname);
     };
 
-    Customer.isCustomer = function () {
-        return true;
+    Customer.isCustomer = function (c) {
+        if(c.constructor === this) {
+            return true;
+        }
+        return false;
     };
 
     Customer.count = function () { // static public

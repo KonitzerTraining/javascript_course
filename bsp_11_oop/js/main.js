@@ -3,7 +3,7 @@
 * instance - Ausprägung / Exemplar
 * constructor - Erschaffer
 * object - Objekt
-* property - Flugfähig
+* property - Eigenschaft Flugfähig
 * attribute - Farbe
 * member - Teil von, Objekte
 * status - Status - fliegt

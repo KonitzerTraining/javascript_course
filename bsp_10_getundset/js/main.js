@@ -9,7 +9,7 @@
             b: 0xd1
         };
 
-        var obj = Object.defineProperties({}, {
+        var obj = Object.defineProperties({}, { // ES 5
 
             // Attribute
             name : {
@@ -33,7 +33,6 @@
                     if(r.length === 1) {
                         r = "0" + r;
                     }
-
                     if(g.length === 1) {
                         g = "0" + g;
                     }

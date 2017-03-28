@@ -12,14 +12,14 @@
     var l;
     var keys;
 
-    for (k in person) {
+    for (k in person) {  //  ES 3
         console.log(k, person[k]);
     }
 
     l = liste.length;
 
     // noch performanter, wenn gegen Null gezählt wird
-    for (i = 0; i < l; i += 1) {
+    for (i = 0; i < l; i += 1) {  //  ES 3
         console.log(liste[i]);
     }
 
@@ -29,15 +29,18 @@
         console.log(person[keys[i]]);
     }
 
-    liste.forEach(function (element) {
+
+    liste.forEach(function (element, index, original) {  //  ES 5
         console.log(element);
     });
 
-    keys.forEach(function (key) {
+
+    keys = Object.keys(person);  //  ES 5
+    keys.forEach(function (key) {  //  ES 5
         console.log(person[key]);
     });
 
 }());
 
-// iife ist ein gute Kandidat für
+// iife ist ein guter Kandidat für
 // ein Code-Snippet oder Live-Template

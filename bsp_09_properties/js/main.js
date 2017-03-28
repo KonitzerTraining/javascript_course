@@ -1,16 +1,37 @@
 (function () {
     "use strict";
 
-    // ES 5
-    var o = Object.defineProperties({}, {
+    var o1 = {
+        eigenschaft : Object.freeze(["asdf"])
+    };
+
+//      Object.seal(o1);
+    Object.freeze(o1);
+
+   // delete o1.eigenschaft;
+
+   //    o1.eigenschaft.push = 234;
+
+    console.log(o1);
+
+       // ES 5
+    var o = Object.defineProperties({
+        a: 2
+    }, {
         color: {
             value: "green",
-            writable: true,
+            writable: true, // Standard: immer false
             configurable: false, // löschbar?
             enumerable: true
         },
         projekte : {
             value: Object.freeze(["p1"]),
+            enumerable: true
+        },
+        sayColor : {
+            value: function () {
+                return this.color;
+            },
             enumerable: true
         }
     });

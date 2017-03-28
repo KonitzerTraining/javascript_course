@@ -3,12 +3,13 @@
  */
 
 // namespace pattern
-window.BSI = window.BSI || {};
+window.NAMESPACE = window.NAMESPACE || {};
 
 // module pattern
-window.BSI.collection = (function () {
+window.NAMESPACE.collection = (function () { // Closure
     "use strict";
-    var basket = [];
+
+    var basket = []; // privat
 
     // ES5
     return Object.create({
